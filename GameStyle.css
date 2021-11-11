@@ -83,5 +83,24 @@ a {
   font-family: "Gluten", cursive;
 }
 .gif{
-    display: none;
+  /* display: block; */
+  width: 0px;
+  transition: width 2s ease-in-out;
+}
+.info{
+  font-size: 25px;
+  color: blueviolet;
+}
+#reset {
+  display: flex;
+  flex-direction: column;
+}
+#resetbtn {
+  margin: 14px 0px;
+  font-size: 18px;
+  background-color: #0f9797;
+  cursor: grab;
+  color: white;
+  padding: 8px;
+  border-radius: 9px;
 }

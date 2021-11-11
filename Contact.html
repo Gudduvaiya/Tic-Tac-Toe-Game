@@ -27,19 +27,51 @@
         margin: 10px;
         cursor: pointer;
       }
+      #popup {
+        color: white;
+        display: none;
+        position: absolute;
+        font-size: 20px;
+        background-color: black;
+        cursor: pointer;
+      }
+      #popup:hover {
+        display: block;
+      }
     </style>
   </head>
   <body>
-      <h1>-:Contact Platforms:-</h1>
+    <h1>-:Contact Platforms:-</h1>
     <div class="content">
-      <a href="https://www.facebook.com/profile.php?id=100008612885256" target="blank"><img src="./Logo/facebook.png" alt="Loading..." srcset="" /></a>
-      <a href="https://www.instagram.com/iamyour_adp" target="blank"><img src="./Logo/insta.jpg" alt="Loading..." srcset="" /></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100008612885256"
+        target="blank"
+        ><img src="./Logo/facebook.png" alt="Loading..." srcset=""
+      /></a>
+      <a href="https://www.instagram.com/iamyour_adp" target="blank"
+        ><img src="./Logo/insta.jpg" alt="Loading..." srcset=""
+      /></a>
 
-      <img src="./Logo/gmail.png" alt="Loading..." srcset="" />
+      <img id="mail" src="./Logo/gmail.png" alt="Loading..." srcset="" />
+      <span id="popup">arindampanda2001@gmail.com</span>
 
-      <a href="https://www.linkedin.com/in/arindam-panda-45a800216/" target="blank"><img src="./Logo/linkedin.png" alt="Loading..." srcset="" /></a>
-      <a href="https://github.com/Gudduvaiya" target="blank"><img src="./Logo/git.png" alt="Loading..." srcset="" /></a>
+      <a
+        href="https://www.linkedin.com/in/arindam-panda-45a800216/"
+        target="blank"
+        ><img src="./Logo/linkedin.png" alt="Loading..." srcset=""
+      /></a>
+      <a href="https://github.com/Gudduvaiya" target="blank"
+        ><img src="./Logo/git.png" alt="Loading..." srcset=""
+      /></a>
     </div>
-    
+    <script>
+      let x = document.getElementById("mail");
+      x.onmouseover = () => {
+        document.getElementById("popup").style.display = "block";
+      };
+      x.onmouseout = () => {
+        document.getElementById("popup").style.display = "none";
+      };
+    </script>
   </body>
 </html>
