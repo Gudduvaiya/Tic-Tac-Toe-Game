@@ -32,15 +32,15 @@ const checkwin=()=>{
         if((boxtexts[e[0]].innerText===boxtexts[e[1]].innerText) && (boxtexts[e[1]].innerText===boxtexts[e[2]].innerText) && (boxtexts[e[0]].innerText!=="")){
             document.querySelector('.info').innerText=boxtexts[e[0]].innerText+ " Won";
             isgameover=true
-            document.querySelector(".gif").getElementsByClassName("gif")[0].style.width="200px"
+            document.querySelector('.gif').getElementsByTagName('img')[0].style.width="200px"
+            gameover.play()
         }
     })
 }
 
 
 //Game Logic
-gameover.muted=true;
-gameover.play()
+// gameover.muted=true;
 let boxes=document.getElementsByClassName("box")
 Array.from(boxes).forEach(element=>{
     let boxtext=element.querySelector('.boxtext');
@@ -54,6 +54,7 @@ Array.from(boxes).forEach(element=>{
             if(!isgameover){
                 document.getElementsByClassName("info")[0].innerText="Turn for "+player
             }
+            
         }
     })
 })

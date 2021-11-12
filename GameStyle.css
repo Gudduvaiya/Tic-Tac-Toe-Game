@@ -82,10 +82,9 @@ a {
   margin-top: 10px;
   font-family: "Gluten", cursive;
 }
-.gif{
-  /* display: block; */
+.gif img{
   width: 0px;
-  transition: width 2s ease-in-out;
+  transition: width 2s ease;
 }
 .info{
   font-size: 25px;
